@@ -131,8 +131,8 @@ RESPOSTA:
 */
 
 
-let a = Number(prompt("guarde A"))
-let b = Number(prompt("guiarde B"))
+let a = Number(prompt("Escreva um número para a variável A"))
+let b = Number(prompt("Escreva um número para a variável B"))
 let c = a
 a = b
 b = c
