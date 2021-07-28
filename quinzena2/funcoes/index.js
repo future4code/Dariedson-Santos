@@ -27,10 +27,12 @@ O QUE ACONTECE NAS FRASES:
 i.   Eu gosto de cenoura vai retornar true e a frase vai ficar igual pois ja está
 em letras minusculas e vai retornar true
 
- ii.  CENOURA é bom pra vista vai retornar a frase cenoura é bom pra vista e vai retornar true
- porque apesar de a frase ter a palavra cenoura em letras maiusculas ele transformou em minusculas
- e vai retornar true também 
- 
+ii.  CENOURA é bom pra vista vai retornar a frase cenoura é bom pra vista e vai retornar true
+porque apesar de a frase ter a palavra cenoura em letras maiusculas ele transformou em minusculas
+e vai retornar true também 
+
+iii. Cenouras crescem na terra vai retornar a frase cenouras crescem na terra e false porque 
+ele vai procuprar pela palavra cenoura no singular
 
 
 
