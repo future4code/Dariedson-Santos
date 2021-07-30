@@ -36,22 +36,23 @@ exercício de escrita de código 1
 */
 // a
 const pessoa = { 
-	nome: "amanda",
+	nome: "Amanda",
 	apelidos: ["amandinha", "mandinha", "mandi"],
 }
 
-console.log(`Eu sou Amanda, mas pode me chamar de: ${pessoa.apelidos[0]}, ${pessoa.apelidos[1]} ou ${pessoa.apelidos[2]}`)
 
-
-
-// exercicio de escrita de código 
-// a
-const novaPessoa = {
-	...pessoa,
-	novoApelido: ["mandis", "dindinha", "dinha"],
+function mostrarNome(pessoa){
+	console.log(`Meu nome é Amanda, mas pode me chamar de: ${pessoa.apelidos[0]}, ${pessoa.apelidos[1]} ou ${pessoa.apelidos[2]}`)
 }
 
-console.log(`${novaPessoa.novoApelido[0]}`)
+
+const novaPessoa = {
+	...pessoa,
+	apelidos: ["mandis", "dindinha", "dinha"],
+}
+mostrarNome(pessoa)
+mostrarNome(novaPessoa)
+
 
 // exercicio de escrita de código 2
 // a
@@ -98,7 +99,8 @@ const terceiraFruta = {
 }
 
 function sacolao(frutas){
-	carrinho.call(...primeiraFruta)
+	carrinho.push(primeiraFruta, segundaFruta, terceiraFruta)
 }
 
+sacolao()
 console.log(carrinho)
