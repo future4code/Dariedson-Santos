@@ -1,4 +1,21 @@
 /*
+EXERCÍCIO DE INTERPRETAÇÃO DE CÓDIGO
+RESPOSTA 1:
+vai ser impresso na tela o array completo, porque a função .map tá passando os 
+parâmetros item, index e array 
+
+RESPOSTA 2 : 
+vai retornar o que está armazenado no nome de cada objeto dentro do array
+"Amanda Rangel", "Laís Petra", "Letícia Chijo"
+
+RESPOSTA 3:
+vão ser exibido todos os objetos que tenha o apelido diferente de Chijo, no caso vai
+aparecer assim: "Amanda Rangel", Laís Petra
+
+*/
+
+
+/*
 1-
 Dado o seguinte array de cachorrinhos que são clientes de um pet shop, 
 realize as operações pedidas nos itens abaixo utilizando as funções de array 
@@ -26,11 +43,11 @@ let dogs = pets.filter(nomes)
 
 function selecionarRaca(tipo){
 	if(tipo.raca === "Salsicha")
-		return tipo
+		console.log(tipo)
 }
 
 let tipoSalsicha = pets.filter(selecionarRaca)
-console.log(tipoSalsicha)
+// console.log(tipoSalsicha)
 
 
 // RESPOSTA C 
@@ -42,7 +59,7 @@ function exibirPoodles(dog){
 }
 
 let selecionarPoodles = pets.filter(exibirPoodles)
-console.log(selecionarPoodles)
+// console.log(selecionarPoodles)
 
 /*-----------------------------------------------------------------------------------
 
@@ -70,7 +87,7 @@ function nomeProdutos(nomeProduto){
 }
 
 let somenteNomes = produtos.filter(nomeProdutos)
-console.log(somenteNomes)
+// console.log(somenteNomes)
 
 // RESPOSTA B
 
@@ -81,7 +98,7 @@ function descontoProdutos(itemDesconto){
 }
 
 let descontinho = produtos.map(descontoProdutos)
-console.log(descontinho)
+// console.log(descontinho)
 
 //RESPOSTA C 
 
@@ -92,7 +109,7 @@ function apenasBebidas(itemBebida){
 }
 
 let somenteBebidas = produtos.filter(apenasBebidas)
-console.log(somenteBebidas)
+// console.log(somenteBebidas)
 
 // RESPOSTA D 
 
@@ -102,14 +119,23 @@ function temYpe(checaProduto){
 	}
 }
 
-let checaYpe = produtos.filter(temYpe)
-console.log(checaYpe)
+const checaYpe = produtos.filter(temYpe)
+// console.log(checaYpe)
 
 
-function fraseCompra(produtosYpe){
-	console.log(`Compre ${produtosYpe.nome} por ${produtosYpe.preco}`)
+
+// RESPOSTA E
+
+function produtoComFrase(fraseYpe){
+	if(fraseYpe.nome.includes("Ypê"))
+	console.log(`Compre ${fraseYpe.nome} por ${fraseYpe.preco}`)
 }
 
-let fraseVendas = checaYpe.filter(fraseCompra)
-console.log(fraseVendas)
+let frasePromocao = produtos.map(produtoComFrase)
 
+
+
+
+/*
+pouca criatividade para dar nomes as variáveis, funções, etc... rsrsrs
+*/
