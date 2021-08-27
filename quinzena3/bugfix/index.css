@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -72,11 +73,17 @@ div img {
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding:15px 0px;
+}
+#container-de-descricao p{
+  display:block;
+  padding-top:50px;
 }
 
 #container-para-comprar {
-    background-color: #e7eb90;
+    background-color: #e7eb90;    
+    display: grid;
+    grid-template-columns: 2;
 }
 
 #container-para-comprar>p {
@@ -99,6 +106,7 @@ div:last-child {
 
 table {
     width: 60%;
+    text-align:center;
 }
 
 td button {
@@ -127,4 +135,32 @@ td button {
 
 #back-button:hover {
     background-color: #635a3d
+}
+table img{
+  width:50px;
+  height:50px;
+}
+table td{
+  width:100px;
+  height:100px;
+}
+.container-do-search img{
+  background-color:white;
+  width:20px;
+  height:20px;
+  padding-left:10px;
+}
+
+td button:active{
+  color:white;
+}
+td button:hover{
+  background-color:#c4b80f;
+}
+.container-do-search input{
+  outline:0;
+  border-width: 0 0 2px;
+}
+table{
+  margin:auto;
 }
