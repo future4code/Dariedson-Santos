@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+h1{
+    display:flex;
+    margin-left:20px;
+}
+header{
+    display:flex;
+    width:100%;
+    background-color:#cf682c;
+    height:100px;
+    justify-content: space-between;
+    align-items:center;
+    box-sizing: border-box;
+
+}
+input{
+    display:flex;
+    width:150px;
+    height:40px;
+    margin-right:100px;
+    text-align:center;
+   
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+    margin:20px 40px;
+    box-sizing: border-box;
+    margin-bottom: 300px;;
+
+}
+.grade-videos{
+    border:1px green solid;
+    height:250px;
+}
+.grade-videos p{
+    padding:20px 5px;
+}
+video{
+    max-width: 100%;
+}
+footer{
+    width:100%;
+    height:60px;
+    text-align: center;
+    background-color:lightgray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*abaixo estilização das páginas 1 e 2 que abrem os vídeos */
+
+.caixa-video{
+    display:grid;
+    grid-template-rows: 50px 275px;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:150px;
+}
+.caixa-video video{
+    width:650px;
+    height:362px;
+}
+section h1{
+    width:100%;
+    height:30px;
+    
+}
+section{
+    box-sizing: border-box;
+}
